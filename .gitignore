@@ -4,10 +4,6 @@ build
 # Node modules
 node_modules
 
-# keys
-**/gitlab_ssh
-**/gitlab_ssh.pub
-
 # environment
 **/*.env
 **/*.env.development
@@ -26,10 +22,4 @@ packages/client/public/assets/images/*
 packages/client/public/assets/textures/*
 
 packages/server/secure
-packages/server/dist/**
-packages/server/dist
-
-packages/server/ctf/private.txt
-packages/server/ctf/.env.development
-packages/client/ctf/.env.development
-packages/server/gitlab_ssh
+packages/server/build/**

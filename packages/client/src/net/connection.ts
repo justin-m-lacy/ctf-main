@@ -1,5 +1,3 @@
-//import * as supbase from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
-
 import * as Colyseus from 'colyseus.js';
 import { Room } from 'colyseus.js';
 import type { CtfSchema } from '../../../server/src/model/schema/ctf-schema';

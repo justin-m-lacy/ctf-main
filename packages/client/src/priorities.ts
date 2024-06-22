@@ -1,3 +1,8 @@
+
+/**
+ * Priorities of Game Components.
+ * Lower priority numbers are processed first.
+ */
 export enum Priorities {
 
     Mover = 2000,

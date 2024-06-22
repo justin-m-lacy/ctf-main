@@ -63,7 +63,7 @@ console.log(`server Listening: ${isSecure ? 'https' : 'http'} on Port: ${port}`)
 
 function secureServer(app: express.Express) {
 
-    console.log(`creating secure server`);
+    console.log(`creating https server`);
 
     const certPath = process.env['CERT_PATH'] ?? './secure/server.cert';
     const keyPath = process.env['KEY_PATH'] ?? './secure/server.key';

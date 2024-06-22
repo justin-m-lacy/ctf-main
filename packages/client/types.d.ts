@@ -19,6 +19,5 @@ declare global {
 
     interface Window {
         howler: Howl;
-        supabase: typeof import("https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm");
     }
 }

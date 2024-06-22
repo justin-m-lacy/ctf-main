@@ -106,26 +106,12 @@ const startApp = (dir: string) => {
 
 const copyAssets = async (buildDir: string) => {
 
-    const pubAssetsDir = path.join('./public', 'assets') + '/**/*';
+    const serverAssetsGlob = path.join('.', 'assets') + '/**/*';
     const envFile = '.env' + (DEV_MODE ? '.development' : '');
-    await promiseCopy(
-        [
-
-            './assets/**/*',
-            path.join(buildDir, 'assets')
-            ,
-
-        ],
-        {
-            // allow overwrite
-            soft: false,
-            // slice first portion of path
-            up: 1,
-        });
 
     await promiseCopy(
         [
-            pubAssetsDir,
+            serverAssetsGlob,
             path.join('./', envFile),
             buildDir
 
@@ -133,8 +119,8 @@ const copyAssets = async (buildDir: string) => {
         {
             // allow overwrite
             soft: false,
-            // slice first portion of path
-            up: 1,
+            // slice portion of path
+            up: 0,
         });
 
     await promiseCopy(

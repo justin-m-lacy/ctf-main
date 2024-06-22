@@ -1,18 +1,16 @@
 # CTF Server
+
+## Setup
+
 ## Installion
 
 Install Node version v16.13.2 or higher.
 
 Install npm version 8.7 or higher ( or pnpm, yarn, etc. )
 
-
-# Setup
-
-### Install npm dependencies.
-
 Run `npm install` on command line.
 
-## Set environment variables:
+### Set environment variables:
 
 Open `.env` file and set necessary environment variables.
 
@@ -45,20 +43,20 @@ run `npm run build` on command line.
 
 Built server is compiled into ./build directory.
 
-# Production
+## Production
 
-## HTTPS
+### HTTPS
 
 [L](https://letsencrypt.org) - offers free TLS certificates for websites.
 
-## Run Production
+### Run Production
 
 After building server,
 
 run `npm run start` on command line.
 
 
-## Create docker images
+### Create docker images
 
 Make sure docker-desktop is running.
 

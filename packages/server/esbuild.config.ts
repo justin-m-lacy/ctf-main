@@ -94,10 +94,10 @@ const startApp = (dir: string) => {
     });
     runner.stdout?.pipe(process.stdout);
     runner.stderr?.pipe(process.stderr);
-    /*runner.on('error', (err) => {
+    runner.on('error', (err) => {
         console.error(`runner failed: ${err}`);
         process.exit();
-    });*/
+    });
 
     return runner;
 
@@ -106,7 +106,7 @@ const startApp = (dir: string) => {
 
 const copyAssets = async (buildDir: string) => {
 
-    const flavorAssets = path.join(flavorDir, 'assets') + '/**/*';
+    const pubAssetsDir = path.join('./public', 'assets') + '/**/*';
     const envFile = '.env' + (DEV_MODE ? '.development' : '');
     await promiseCopy(
         [
@@ -125,8 +125,8 @@ const copyAssets = async (buildDir: string) => {
 
     await promiseCopy(
         [
-            flavorAssets,
-            path.join(flavorDir, envFile),
+            pubAssetsDir,
+            path.join('./', envFile),
             buildDir
 
         ],

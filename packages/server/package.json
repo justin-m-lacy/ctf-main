@@ -4,13 +4,10 @@
   "main": "src/main.js",
   "scripts": {
     "clear": "rimraf build",
-    "holo:image": "docker build -t holo-build -f holo/dockerfile .",
     "ctf:image": "docker build -t ctf-build -f ctf/dockerfile .",
-    "build:holo": "rimraf build && cross-env FLAVOR=holo NODE_ENV=production ts-node esbuild.config.ts",
-    "build": "rimraf build && cross-env FLAVOR=ctf NODE_ENV=production ts-node esbuild.config.ts",
-    "dev:holo": "cross-env FLAVOR=holo NODE_ENV=development ts-node esbuild.config.ts",
-    "run": "cross-env FLAVOR=ctf ts-node esbuild.config.ts",
-    "dev": "cross-env FLAVOR=ctf NODE_ENV=development ts-node esbuild.config.ts",
+    "build": "rimraf build && cross-env NODE_ENV=production ts-node esbuild.config.ts",
+    "run": "cross-env  ts-node esbuild.config.ts",
+    "dev": "cross-env NODE_ENV=development ts-node esbuild.config.ts",
     "types": "rimraf types && tsc --emitDeclarationOnly",
     "deploy": "npm i --production && start",
     "start": "node ."

@@ -6,7 +6,7 @@ Install Node version v16.13.2 or higher.
 Install npm version 8.7 or higher ( or pnpm, yarn, etc. )
 
 
-## Setup
+# Setup
 
 ### Install npm dependencies.
 
@@ -18,6 +18,11 @@ Open `.env` file and set necessary environment variables.
 
 `SERVER_PORT` - Network port used by the server. 3000 is default.
 
+`KEY_PATH` - Path to signing key for hosting https.
+
+`CERT_PATH` - Path to TLS certificate for hosting https.
+
+`NODE_ENV` - should be 'production' or 'development'
 
 ## Run development version
 
@@ -39,6 +44,12 @@ In command terminal run:
 run `npm run build` on command line.
 
 Built server is compiled into ./build directory.
+
+# Production
+
+## HTTPS
+
+[L](https://letsencrypt.org) - offers free TLS certificates for websites.
 
 ## Run Production
 

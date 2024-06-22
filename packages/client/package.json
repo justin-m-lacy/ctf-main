@@ -11,10 +11,8 @@
     "preview": "vite preview",
     "build": "vite build",
     "build:host": "yarn install --production=false && rimraf dist && yarn build && yarn install --production --frozen-lockfile",
-    "build:holo": "cross-env FLAVOR=holo vite build",
     "dev": "vite",
     "force": "vite --force",
-    "dev:holo": "cross-env FLAVOR=holo vite --force",
     "particles": "ts-node upgrade-particles"
   },
   "dependencies": {

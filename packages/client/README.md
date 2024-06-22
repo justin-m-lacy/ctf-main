@@ -5,8 +5,6 @@
 
 Environment variables used in building only
 
-`FLAVOR` - ctf branding/type to create.
-
 `MANUAL_ENV` - Do not load .env files before building.
 Used for building from servers/droplets that set environment variables
 from scripts.

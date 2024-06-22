@@ -18,30 +18,24 @@ export default async function (config: ConfigEnv) {
 
   const isProduction = config.mode === 'production';
 
-  const cmdFlavor = process.env['FLAVOR'] ?? 'ctf';
-  const env_dir = cmdFlavor ? `${cmdFlavor}/` : './'
-
   let env = process.env;
   /// MANUAL_ENV Means environmental variables are set through scripts only.
   /// No environment files are loaded.
   if (!process.env['MANUAL_ENV']) {
-    console.log(`env dir: ${env_dir}`);
-    env = mergeEnv(loadEnv(config.mode, env_dir), env);
+    env = mergeEnv(loadEnv(config.mode, './'), env);
   }
 
   const baseDir = addSlash(env.VITE_CLIENT_BASE) ?? '/'
-  console.log(`BUILD: ${cmdFlavor ?? ''} ${config.mode}`);
+  console.log(`BUILD: ${config.mode}`);
   console.log(`Server: ${env.VITE_SERVER_HOST}:${env.VITE_SERVER_PORT}${baseDir}`);
-
-  const flavor = cmdFlavor ?? env.VITE_FLAVOR;
 
   return defineConfig({
 
-    envDir: env_dir,
+    envDir: './',
 
     base: baseDir,
 
-    publicDir: cmdFlavor ? resolve(cmdFlavor, 'public') : 'public',
+    publicDir: resolve('./', 'public'),
 
     resolve: {
 
@@ -56,15 +50,7 @@ export default async function (config: ConfigEnv) {
 
             const serverPath = path.join(__dirname, '../server');
 
-            /// check for file in base server path or server flavor path.
-            if (flavor != null) {
-              let uri = path.join(serverPath, flavor, 'assets', source);
-
-              if (existsSync(uri)) {
-                return uri;
-              }
-            }
-
+            /// check for file in base server assets path.
             let uri = path.join(serverPath, 'assets', source);
             if (existsSync(uri)) {
               return uri;

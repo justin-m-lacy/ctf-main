@@ -2,7 +2,6 @@ declare global {
     namespace NodeJS {
         interface ProcessEnv {
             SERVER_PORT: string;
-            FLAVOR?: string;
             MODE: 'development' | 'production' | undefined,
 
             /// Authentication and Db access.

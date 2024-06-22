@@ -58,7 +58,7 @@ gameServer.define(RoomName.Lobby, LobbyRoom);
 gameServer.define(RoomName.Ctf, CtfRoom);
 gameServer.listen(port);
 
-console.log(`${process.env.FLAVOR ?? ''} server Listening with protocol: ${isSecure ? 'https' : 'http'} on Port: ${port}`);
+console.log(`server Listening: ${isSecure ? 'https' : 'http'} on Port: ${port}`);
 
 
 function secureServer(app: express.Express) {

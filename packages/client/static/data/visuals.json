@@ -1,0 +1,22 @@
+{
+    "hitomi": {
+        "objects": {
+            "basic": {
+                "radius": 12,
+                "spin": 1600
+            },
+            "hittable": {
+                "width": 24,
+                "height": 24
+            }
+        }
+    },
+    "jacob": {
+        "objects": {
+            "thrown": {
+                "width": 12,
+                "height": 28
+            }
+        }
+    }
+}

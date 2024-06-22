@@ -1,0 +1,277 @@
+{
+  "animations": {
+    "main": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+    ]
+  },
+  "frames": {
+    "13": {
+      "filename": "13.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 290,
+        "h": 252
+      },
+      "rotated": false,
+      "trimmed": true,
+      "sourceSize": {
+        "w": 512,
+        "h": 512
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "14": {
+      "filename": "14.png",
+      "frame": {
+        "x": 0,
+        "y": 252,
+        "w": 289,
+        "h": 250
+      },
+      "rotated": false,
+      "trimmed": true,
+      "sourceSize": {
+        "w": 512,
+        "h": 512
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "12": {
+      "filename": "12.png",
+      "frame": {
+        "x": 290,
+        "y": 0,
+        "w": 289,
+        "h": 284
+      },
+      "rotated": true,
+      "trimmed": true,
+      "sourceSize": {
+        "w": 512,
+        "h": 512
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "11": {
+      "filename": "11.png",
+      "frame": {
+        "x": 0,
+        "y": 502,
+        "w": 286,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": true,
+      "sourceSize": {
+        "w": 512,
+        "h": 512
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "10": {
+      "filename": "10.png",
+      "frame": {
+        "x": 286,
+        "y": 502,
+        "w": 282,
+        "h": 278
+      },
+      "rotated": true,
+      "trimmed": true,
+      "sourceSize": {
+        "w": 512,
+        "h": 512
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "9": {
+      "filename": "09.png",
+      "frame": {
+        "x": 574,
+        "y": 0,
+        "w": 275,
+        "h": 272
+      },
+      "rotated": true,
+      "trimmed": true,
+      "sourceSize": {
+        "w": 512,
+        "h": 512
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "8": {
+      "filename": "08.png",
+      "frame": {
+        "x": 574,
+        "y": 275,
+        "w": 264,
+        "h": 262
+      },
+      "rotated": false,
+      "trimmed": true,
+      "sourceSize": {
+        "w": 512,
+        "h": 512
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "7": {
+      "filename": "07.png",
+      "frame": {
+        "x": 564,
+        "y": 537,
+        "w": 249,
+        "h": 246
+      },
+      "rotated": false,
+      "trimmed": true,
+      "sourceSize": {
+        "w": 512,
+        "h": 512
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "4": {
+      "filename": "04.png",
+      "frame": {
+        "x": 0,
+        "y": 784,
+        "w": 240,
+        "h": 244
+      },
+      "rotated": true,
+      "trimmed": true,
+      "sourceSize": {
+        "w": 512,
+        "h": 512
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "5": {
+      "filename": "05.png",
+      "frame": {
+        "x": 244,
+        "y": 784,
+        "w": 240,
+        "h": 243
+      },
+      "rotated": true,
+      "trimmed": true,
+      "sourceSize": {
+        "w": 512,
+        "h": 512
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "3": {
+      "filename": "03.png",
+      "frame": {
+        "x": 564,
+        "y": 783,
+        "w": 236,
+        "h": 241
+      },
+      "rotated": false,
+      "trimmed": true,
+      "sourceSize": {
+        "w": 512,
+        "h": 512
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "2": {
+      "filename": "02.png",
+      "frame": {
+        "x": 846,
+        "y": 0,
+        "w": 234,
+        "h": 237
+      },
+      "rotated": false,
+      "trimmed": true,
+      "sourceSize": {
+        "w": 512,
+        "h": 512
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "6": {
+      "filename": "06.png",
+      "frame": {
+        "x": 846,
+        "y": 237,
+        "w": 234,
+        "h": 229
+      },
+      "rotated": false,
+      "trimmed": true,
+      "sourceSize": {
+        "w": 512,
+        "h": 512
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "image": "red-explosion.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1080,
+      "h": 1024
+    },
+    "scale": "1"
+  }
+}

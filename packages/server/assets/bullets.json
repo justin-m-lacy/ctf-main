@@ -1,0 +1,39 @@
+{
+    "basic": {
+        "radius": 6,
+        "speed": 400,
+        "power": 40,
+        "blast": 60
+    },
+    "snipe": {
+        "radius": 2,
+        "speed": 1200,
+        "power": 100,
+        "blast": 0
+    },
+    "thrown": {
+        "radius": 10,
+        "speed": 370,
+        "power": 0,
+        "blast": 80
+    },
+    "homing": {
+        "radius": 6,
+        "speed": 420,
+        "power": 80,
+        "blast": 0,
+        "time": 5
+    },
+    "porter": {
+        "radius": 6,
+        "speed": 400,
+        "power": 0,
+        "blast": 140
+    },
+    "spawner": {
+        "radius": 4,
+        "speed": 1000,
+        "power": 0,
+        "blast": 0
+    }
+}

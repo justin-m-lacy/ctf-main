@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": ".",
+    "module": "esnext",
+    "target": "es2016",
+    "lib": [
+      "es6"
+    ],
+    "types": [
+      "node"
+    ],
+    "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "incremental": true,
+    "composite": true,
+    "allowJs": true,
+    "outDir": "./build",
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "experimentalDecorators": true
+  },
+  "typeAcquisition": {
+    "enable": true
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "packages/build"
+  ]
+}

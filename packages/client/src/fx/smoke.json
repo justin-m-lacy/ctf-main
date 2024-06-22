@@ -1,0 +1,101 @@
+{
+	"lifetime": {
+		"min": 0.3,
+		"max": 0.5
+	},
+	"frequency": 0.001,
+	"emitterLifetime": -1,
+	"maxParticles": 50,
+	"addAtBack": false,
+	"pos": {
+		"x": 0,
+		"y": 0
+	},
+	"behaviors": [
+		{
+			"type": "alpha",
+			"config": {
+				"alpha": {
+					"list": [
+						{
+							"time": 0,
+							"value": 0.6
+						},
+						{
+							"time": 1,
+							"value": 0.1
+						}
+					]
+				}
+			}
+		},
+		{
+			"type": "moveSpeedStatic",
+			"config": {
+				"min": 0,
+				"max": 0
+			}
+		},
+		{
+			"type": "offsetScale",
+			"config": {
+				"scale": {
+					"list": [
+						{
+							"time": 0,
+							"value": 0.2
+						},
+						{
+							"time": 1,
+							"value": 0.6
+						}
+					]
+				},
+				"minMult": 1
+			}
+		},
+		{
+			"type": "color",
+			"config": {
+				"color": {
+					"list": [
+						{
+							"time": 0,
+							"value": "#6e6766"
+						},
+						{
+							"time": 1,
+							"value": "#cccaca"
+						}
+					]
+				}
+			}
+		},
+		{
+			"type": "rotation",
+			"config": {
+				"accel": 0,
+				"minSpeed": 1,
+				"maxSpeed": 40,
+				"minStart": 0,
+				"maxStart": 360
+			}
+		},
+		{
+			"type": "noRotation",
+			"config": {}
+		},
+		{
+			"type": "textureRandom",
+			"config": {
+				"textures": [
+					"./assets/textures/particle.png"
+				]
+			}
+		},
+		{
+			"type": "spawnPoint",
+			"config": {}
+		}
+	]
+}

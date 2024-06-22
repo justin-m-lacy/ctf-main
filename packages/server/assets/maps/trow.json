@@ -1,0 +1,93 @@
+{
+    "width": 2000,
+    "height": 1500,
+    "background": {
+        "image": {
+            "image": "colors-1.jpg",
+            "alpha": 1
+        },
+        "tile": {
+            "type": "tile",
+            "image": "stone-inverted.png",
+            "alpha": 0.4
+        }
+    },
+    "teams": [
+        {
+            "flag": {
+                "x": 100,
+                "y": 1150
+            },
+            "spawn": {
+                "shape": "rect",
+                "l": 25,
+                "t": 25,
+                "w": 150,
+                "h": 200
+            }
+        },
+        {
+            "flag": {
+                "x": 1900,
+                "y": 350
+            },
+            "spawn": {
+                "shape": "rect",
+                "l": 1825,
+                "t": 1275,
+                "w": 150,
+                "h": 200
+            }
+        }
+    ],
+    "walls": [
+        {
+            "shape": "rect",
+            "type": "wall",
+            "l": 300,
+            "w": 75,
+            "t": 1000,
+            "h": 300
+        },
+        {
+            "shape": "rect",
+            "type": "wall",
+            "r": 1700,
+            "w": 75,
+            "b": 500,
+            "h": 300
+        },
+        {
+            "shape": "rect",
+            "type": "wall",
+            "l": 920,
+            "t": 0,
+            "w": 160,
+            "h": 200
+        },
+        {
+            "shape": "rect",
+            "type": "wall",
+            "l": 920,
+            "t": 1300,
+            "w": 160,
+            "h": 200
+        },
+        {
+            "shape": "rect",
+            "type": "water",
+            "l": 900,
+            "t": 380,
+            "w": 200,
+            "h": 250
+        },
+        {
+            "shape": "rect",
+            "type": "water",
+            "l": 900,
+            "t": 870,
+            "w": 200,
+            "h": 250
+        }
+    ]
+}

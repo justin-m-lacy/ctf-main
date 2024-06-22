@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": "./",
+    "outDir": "lib",
+    "target": "esnext",
+    "module": "esnext",
+    "noEmit": false,
+    "strict": true,
+    "jsx": "preserve",
+    "declaration": true,
+    "isolatedModules": true,
+    "importsNotUsedAsValues": "remove",
+    "moduleResolution": "node",
+    "incremental": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "lib": [
+      "esnext",
+      "dom",
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  },
+  "typeAcquisition": {
+    "enable": true
+  },
+  "include": [
+    "./*.ts",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

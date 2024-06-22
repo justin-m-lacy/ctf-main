@@ -1,0 +1,21 @@
+{
+  "name": "pixiwixi",
+  "version": "0.9.5",
+  "description": "Basic Ui elements for pixi.js",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@pixi/math": "~7.4.0",
+    "gibbon.js": "^3.1.0",
+    "pixi.js": "^7.4.0",
+    "tweedle.js": "^2.0.0"
+  },
+  "author": "Justin Lacy",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "typescript": "^5.3.3"
+  }
+}

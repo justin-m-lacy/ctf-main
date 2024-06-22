@@ -1,0 +1,261 @@
+{
+    "crafts": [
+        {
+            "id": "cas",
+            "color": "DD3F1B",
+            "offColor": "E7ED72",
+            "abilities": [
+                "dash",
+                "speed",
+                "flamecone",
+                "flameburst"
+            ]
+        },
+        {
+            "id": "dee",
+            "color": "FEFFFA",
+            "offColor": "43bfef",
+            "primary": "manafire",
+            "stats": {
+                "maxHp": 90,
+                "maxSpeed": 227
+            },
+            "abilities": [
+                "dash",
+                "speed",
+                {
+                    "id": "spawnblockers",
+                    "name": "Royal Guard",
+                    "desc": "Minions move to protect Dee."
+                },
+                {
+                    "id": "spawncastle",
+                    "name": "Raise Castle",
+                    "desc": "Raise defenses that Dee's allies can pass through."
+                }
+            ]
+        },
+        {
+            "id": "d'vire",
+            "name": "Lady D'vire",
+            "color": "FEFFFA",
+            "offColor": "43bfef",
+            "primary": "manafire",
+            "stats": {
+                "maxSpeed": 210,
+                "maxHp": 150
+            },
+            "abilities": [
+                {
+                    "id": "regen",
+                    "name": "Undead Lifeforce",
+                    "desc": "D'vire regains health slowly over time."
+                },
+                {
+                    "id": "spawnblockers",
+                    "name": "Bone Shield"
+                },
+                {
+                    "id": "aoedamage",
+                    "name": "Unholy Aura"
+                }
+            ]
+        },
+        {
+            "id": "fenrix",
+            "color": "FEFFFA",
+            "offColor": "43bfef",
+            "primary": "manafire",
+            "stats": {
+                "maxSpeed": 235,
+                "maxHp": 110
+            },
+            "abilities": [
+                {
+                    "id": "dash"
+                },
+                {
+                    "id": "speed"
+                },
+                {
+                    "id": "regen",
+                    "name": "Natural Healing",
+                    "desc": "Fenrix slowly heals over time."
+                },
+                {
+                    "id": "invisible",
+                    "name": "Stealth",
+                    "desc": "Fenrix becomes invisible to enemies"
+                }
+            ]
+        },
+        {
+            "id": "hitomi",
+            "color": "0xFEBD00",
+            "offColor": "FEE039",
+            "stats": {},
+            "abilities": [
+                {
+                    "id": "dash",
+                    "name": "Wind Walk",
+                    "desc": "Hitomi dashes in current direction.",
+                    "cooldown": 10
+                },
+                {
+                    "id": "dropcaltrops",
+                    "name": "Makibishi",
+                    "desc": "Drop makibishi that damage and slow pursuers.",
+                    "cooldown": 2
+                },
+                {
+                    "id": "tripleshot",
+                    "name": "Shuriken"
+                }
+            ]
+        },
+        {
+            "id": "jacob",
+            "color": "0xff8fdf",
+            "offColor": "feb8b8",
+            "abilities": [
+                {
+                    "id": "dash"
+                },
+                {
+                    "id": "speed"
+                },
+                {
+                    "id": "grenade",
+                    "name": "Molotov",
+                    "desc": "Throw a molotov that can pass over walls."
+                },
+                {
+                    "id": "spawnwall",
+                    "name": "Improvise Barricade",
+                    "desc": "Create a wall at target position."
+                }
+            ]
+        },
+        {
+            "id": "katashi",
+            "color": "f7abd5",
+            "offColor": "FE95DE",
+            "abilities": [
+                "dash",
+                {
+                    "id": "teleport",
+                    "name": "Ley-line Walk",
+                    "desc": "Teleport to target location."
+                },
+                {
+                    "id": "phase",
+                    "desc": "For a short time Katashi can move through walls."
+                },
+                "invisible"
+            ]
+        },
+        {
+            "id": "nidra",
+            "color": "FEFFFA",
+            "offColor": "43bfef",
+            "abilities": [
+                "dash",
+                {
+                    "id": "baseport",
+                    "name": "Prudence",
+                    "desc": "Teleport to Nidra's team's flag spawning location."
+                },
+                {
+                    "id": "hibernate",
+                    "name": "Dormancy",
+                    "desc": "Nidra enters a sleeping state and cannot act but takes no damage. The effect can be cancelled by Nidra attacking."
+                },
+                {
+                    "id": "fireportal",
+                    "name": "Fire Portal",
+                    "desc": "Fire a portal that sends enemies back to their spawn point."
+                }
+            ]
+        },
+        {
+            "id": "ognar",
+            "color": "FEFFFA",
+            "offColor": "43bfef",
+            "stats": {
+                "maxHp": 130
+            },
+            "abilities": [
+                "dash",
+                "speed",
+                {
+                    "id": "enemyflag",
+                    "name": "Thirst for Glory",
+                    "desc": "Teleport to dropped or stolen enemy flag. No effect when enemy flag is at base."
+                },
+                {
+                    "id": "leapattack",
+                    "name": "Leap Attack",
+                    "desc": "Leap at enemy at target location and damage them."
+                }
+            ]
+        },
+        {
+            "id": "slzar",
+            "color": "1a7328",
+            "offColor": "35a646",
+            "primary": "manafire",
+            "abilities": [
+                "dash",
+                "speed",
+                {
+                    "id": "swim",
+                    "name": "Natural Swimmer",
+                    "desc": "Slzar is not blocked by water."
+                },
+                {
+                    "id": "droptrap",
+                    "name": "Set Trap",
+                    "desc": "Set a trap that will damage enemy players."
+                },
+                {
+                    "id": "firehook",
+                    "name": "Angler",
+                    "desc": "Fire hook to grab enemy player."
+                }
+            ]
+        },
+        {
+            "id": "sphinx",
+            "color": "7ec2fe",
+            "offColor": "c7e5fe",
+            "abilities": [
+                "dash",
+                "speed",
+                {
+                    "id": "flagport",
+                    "name": "Forestall",
+                    "desc": "Teleport to your teams stolen or dropped flag. No effect if flag is at your base."
+                },
+                {
+                    "id": "aoeheal",
+                    "name": "Healing Aura",
+                    "desc": "Allies near Sphinx are healed over time."
+                }
+            ]
+        },
+        {
+            "id": "xarxis",
+            "color": "DD3F1B",
+            "offColor": "E7ED72",
+            "abilities": [
+                "dash",
+                "spawnblockers",
+                "aoedamage",
+                {
+                    "id": "firehoming",
+                    "name": "Homing Missile"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "scripts": {
+    "clear": "rimraf build",
+    "holo:image": "docker build -t holo-build -f holo/dockerfile .",
+    "ctf:image": "docker build -t ctf-build -f ctf/dockerfile .",
+    "build:holo": "rimraf build && cross-env FLAVOR=holo NODE_ENV=production ts-node esbuild.config.ts",
+    "build": "rimraf build && cross-env FLAVOR=ctf NODE_ENV=production ts-node esbuild.config.ts",
+    "dev:holo": "cross-env FLAVOR=holo NODE_ENV=development ts-node esbuild.config.ts",
+    "run": "cross-env FLAVOR=ctf ts-node esbuild.config.ts",
+    "dev": "cross-env FLAVOR=ctf NODE_ENV=development ts-node esbuild.config.ts",
+    "types": "rimraf types && tsc --emitDeclarationOnly",
+    "deploy": "npm i --production && start",
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "Justin Lacy",
+  "dependencies": {
+    "@colyseus/auth": "^0.15.10",
+    "@colyseus/schema": "^2.0.20",
+    "@colyseus/ws-transport": "^0.15.1",
+    "@types/copyfiles": "^2.4.1",
+    "colyseus": "^0.15.15",
+    "dotenv": "^16.0.3",
+    "eventemitter3": "^4.0.7",
+    "express": "^4.18.1",
+    "express-jwt": "^8.2.1",
+    "gibbon.js": "^3.1.0",
+    "matter-js": "^0.18.0",
+    "poly-decomp-es": "^0.4.1",
+    "poly-partition": "^1.0.2",
+    "tweedle.js": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/matter-js": "^0.18.2",
+    "copyfiles": "^2.4.1",
+    "cross-env": "^7.0.3",
+    "env-cmd": "^10.1.0",
+    "esbuild": "^0.16.13",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.7.0",
+    "tsconfig-paths": "^4.1.0",
+    "typescript": "^5.3.3",
+    "typescript-transform-paths": "^3.3.1"
+  }
+}

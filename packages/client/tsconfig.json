@@ -1,0 +1,82 @@
+{
+  "ts-node": {
+    "compilerOptions": {
+      "module": "ESNext"
+    }
+  },
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": ".",
+    "outDir": "dist",
+    "target": "esnext",
+    "module": "esnext",
+    "noEmit": false,
+    "declaration": true,
+    "declarationMap": true,
+    "importsNotUsedAsValues": "remove",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@pixiwixi/*": [
+        "../pixiwixi/*"
+      ],
+      "@server/*": [
+        "../server/assets-ctf/*",
+        "../server/assets-holo/*",
+        "../server/assets/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@model/*": [
+        "./src/model/*"
+      ],
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "dom",
+      "esnext"
+    ]
+  },
+  "references": [
+    {
+      "path": "../server/"
+    },
+    {
+      "path": "../pixiwixi/"
+    }
+  ],
+  "include": [
+    "./*.ts",
+    "../../node_modules/@types/howler/*.d.ts",
+    "types.d.ts",
+    "./src/**/*.ts",
+    "./src/**/*.d.ts",
+    "./src/**/*.tsx",
+    "../pixiwixi/src/layout/stack.ts",
+    "../pixiwixi/src/layout/bounded-box.ts",
+    "../pixiwixi/src/layout/grid.ts",
+    "../pixiwixi/src/layout/flow-layout.ts",
+    "../pixiwixi/src/layout/scroller.ts",
+  ],
+  "exclude": [
+    "dist/",
+    "node_modules",
+    "lib",
+    "types"
+  ]
+}

@@ -1,0 +1,117 @@
+{
+    "width": 4000,
+    "height": 3000,
+    "background": {
+        "image": {
+            "image": "arcane-1.jpg",
+            "alpha": 1
+        },
+        "tile": {
+            "type": "tile",
+            "image": "stone-inverted.png",
+            "alpha": 0.4
+        }
+    },
+    "teams": [
+        {
+            "flag": {
+                "x": 100,
+                "y": 2250
+            },
+            "spawn": {
+                "shape": "rect",
+                "l": 25,
+                "t": 25,
+                "w": 200,
+                "h": 250
+            }
+        },
+        {
+            "flag": {
+                "x": 3900,
+                "y": 750
+            },
+            "spawn": {
+                "shape": "rect",
+                "r": 3975,
+                "b": 2975,
+                "w": 200,
+                "h": 250
+            }
+        }
+    ],
+    "walls": [
+        {
+            "name": "flagWall",
+            "shape": "rect",
+            "type": "wall",
+            "l": 300,
+            "w": 75,
+            "b": 2400,
+            "h": 350
+        },
+        {
+            "name": "flagWall",
+            "shape": "rect",
+            "type": "wall",
+            "r": 3700,
+            "w": 75,
+            "t": 600,
+            "h": 350
+        },
+        {
+            "name": "topwall",
+            "shape": "rect",
+            "type": "wall",
+            "cx": 2000,
+            "t": 0,
+            "w": 300,
+            "h": 250
+        },
+        {
+            "name": "waterwall",
+            "shape": "rect",
+            "type": "wall",
+            "cx": 2000,
+            "w": 700,
+            "t": 550,
+            "b": 850
+        },
+        {
+            "name": "topwater",
+            "shape": "rect",
+            "type": "water",
+            "cx": 2000,
+            "w": 800,
+            "t": 850,
+            "b": 1250
+        },
+        {
+            "name": "botwater",
+            "shape": "rect",
+            "type": "water",
+            "cx": 2000,
+            "w": 800,
+            "t": 1750,
+            "b": 2150
+        },
+        {
+            "name": "waterwall",
+            "shape": "rect",
+            "type": "wall",
+            "cx": 2000,
+            "w": 700,
+            "t": 2150,
+            "b": 2450
+        },
+        {
+            "name": "botwall",
+            "shape": "rect",
+            "type": "wall",
+            "cx": 2000,
+            "w": 300,
+            "t": 2750,
+            "b": 3000
+        }
+    ]
+}

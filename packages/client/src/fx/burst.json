@@ -1,0 +1,85 @@
+{
+	"lifetime": {
+		"min": 0.3,
+		"max": 0.5
+	},
+	"particlesPerWave": 1,
+	"frequency": 0.001,
+	"emitterLifetime": 0.05,
+	"maxParticles": 100,
+	"addAtBack": false,
+	"pos": {
+		"x": 0,
+		"y": 0
+	},
+	"behaviors": [
+		{
+			"type": "alpha",
+			"config": {
+				"alpha": {
+					"list": [
+						{
+							"time": 0,
+							"value": 1
+						},
+						{
+							"time": 1,
+							"value": 0.9
+						}
+					]
+				}
+			}
+		},
+		{
+			"type": "moveSpeed",
+			"config": {
+				"speed": {
+					"list": [
+						{
+							"time": 0,
+							"value": 200
+						},
+						{
+							"time": 1,
+							"value": 100
+						}
+					]
+				},
+				"minMult": 1
+			}
+		},
+		{
+			"type": "scaleStatic",
+			"config": {
+				"min": 0.2,
+				"max": 0.2
+			}
+		},
+		{
+			"type": "rotation",
+			"config": {
+				"accel": 0,
+				"minSpeed": 2,
+				"maxSpeed": 1000,
+				"minStart": 0,
+				"maxStart": 360
+			}
+		},
+		{
+			"type": "textureRandom",
+			"config": {
+				"textures": [
+					"./assets/textures/triangle.png"
+				]
+			}
+		},
+		{
+			"type": "spawnPoint",
+			"config": {
+				"start": 0,
+				"spacing": 0,
+				"distance": 0
+			}
+		}
+	]
+}

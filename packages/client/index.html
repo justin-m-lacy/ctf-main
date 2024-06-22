@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-Content-Security-Policy"
+    content="default-src 'self' *.<%= VITE_SERVER_HOST %> ; script-src 'self' *.<%= VITE_SERVER_HOST %> ; connect-src 'self' *.<%= VITE_SERVER_HOST %> ws://*.<%= VITE_SERVER_HOST %> wss://*.<%= VITE_SERVER_HOST %>" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js"
+    integrity="sha512-dMiBqqEV5i3KqpAdsgQSSZ72DnNib7otY0X+b/Tnn1EmLym1dxuZ19csdZqBnfDniKd9bmNtzStQzuMrIa5Ngw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="/assets/styles.css" />
+
+  <title>
+    <%= VITE_GAME_TITLE %>
+  </title>
+</head>
+
+
+<body>
+
+  <div id="paneAbility" class="pane">
+    <div class="title"></div>
+    <div class="type"></div>
+    <div><label>Duration:</label>
+      <span class="duration"></span>
+    </div>
+    <div><label>Cooldown:</label>
+      <span class="cooldown"></span>
+    </div>
+    <div class="binding">
+      <div class="binding_label">Input Bindings:</div>
+      <div class="binding_input"></div>
+    </div>
+    <div class="desc"></div>
+  </div>
+
+  <div id="paneConnect" class="pane">
+    <div class="title">
+      <%= VITE_GAME_TITLE %>
+    </div>
+    <form id="formConnect">
+      <div class="flex-row-full">
+        <input id="fldName" value="name" placeholder="Name">
+      </div>
+
+      <input id="btnJoin" type="button" value="Join Game">
+      <input id="btnNewGame" type="button" value="New Game">
+      <input id="btnSettings" type="button" value="Settings">
+
+    </form>
+  </div>
+
+  <div id="paneChat" class="pane">
+
+    <form id="formChat">
+      <div id="chatTextArea" wrap="hard" rows="10" readonly></div>
+
+      <div class="flex-row">
+        <input id="fldChatInput" type="text">
+      </div>
+    </form>
+  </div>
+
+
+  <script type="module" src="/src/index.ts"></script>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+{
+    "abilities": [
+        {
+            "id": "aoedamage",
+            "cooldown": 120,
+            "radius": 500,
+            "duration": 4
+        },
+        {
+            "id": "aoeheal",
+            "cooldown": 4,
+            "radius": 500,
+            "duration": 3
+        },
+        {
+            "id": "baseport",
+            "cooldown": 120,
+            "duration": 3
+        },
+        {
+            "id": "circleshot",
+            "cooldown": 50,
+            "duration": 0,
+            "maxDist": 540,
+            "type": "aim"
+        },
+        {
+            "id": "dash",
+            "cooldown": 20,
+            "duration": 0.5,
+            "type": "trigger"
+        },
+        {
+            "id": "dropcaltrops",
+            "name": "Drop Caltrops",
+            "desc": "Drop caltrops behind the player.",
+            "cooldown": 3
+        },
+        {
+            "id": "droptrap",
+            "cooldown": 80
+        },
+        {
+            "id": "enemyflag",
+            "cooldown": 80,
+            "duration": 1
+        },
+        {
+            "id": "flagport",
+            "cooldown": 80,
+            "duration": 1
+        },
+        {
+            "id": "flameburst",
+            "cooldown": 70,
+            "duration": 1.5
+        },
+        {
+            "id": "flamecone",
+            "cooldown": 80,
+            "duration": 3
+        },
+        {
+            "id": "firehoming",
+            "cooldown": 120
+        },
+        {
+            "id": "firehook",
+            "cooldown": 120
+        },
+        {
+            "id": "fireportal",
+            "cooldown": 120,
+            "maxDist": 560
+        },
+        {
+            "id": "grenade",
+            "cooldown": 20
+        },
+        {
+            "id": "hibernate",
+            "cooldown": 120,
+            "duration": 5,
+            "radius": 50
+        },
+        {
+            "id": "healself",
+            "cooldown": 60,
+            "type": "trigger",
+            "duration": 3
+        },
+        {
+            "id": "invisible",
+            "cooldown": 120,
+            "duration": 4
+        },
+        {
+            "id": "manaboost",
+            "cooldown": 60,
+            "duration": 5
+        },
+        {
+            "id": "manafire",
+            "cooldown": 0
+        },
+        {
+            "id": "phase",
+            "cooldown": 80,
+            "duration": 10
+        },
+        {
+            "id": "regen"
+        },
+        {
+            "id": "slowtarget",
+            "cooldown": 80,
+            "duration": 10,
+            "target": "enemy"
+        },
+        {
+            "id": "spawnblockers",
+            "cooldown": 90,
+            "duration": 60,
+            "type": "trigger"
+        },
+        {
+            "id": "spawncastle",
+            "cooldown": 120,
+            "duration": 30
+        },
+        {
+            "id": "spawnwall",
+            "cooldown": 60
+        },
+        {
+            "id": "speed",
+            "cooldown": 50,
+            "duration": 7
+        },
+        {
+            "id": "snipe",
+            "cooldown": 120,
+            "duration": 10
+        },
+        {
+            "id": "swim",
+            "cooldown": 60,
+            "duration": 10
+        },
+        {
+            "id": "tripleshot",
+            "cooldown": 30,
+            "duration": 0,
+            "maxDist": 600
+        },
+        {
+            "id": "leapattack",
+            "cooldown": 90,
+            "duration": 0.5,
+            "maxDist": 540
+        },
+        {
+            "id": "teleport",
+            "cooldown": 50,
+            "maxDist": 800
+        }
+    ]
+}

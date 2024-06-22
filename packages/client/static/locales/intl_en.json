@@ -1,0 +1,18 @@
+{
+    "btnLeaveGame": "Leave Game",
+    "btnSettings": "Settings",
+    "btnClose": "Close",
+    "joiningMatch": "Joining Match",
+    "attemptJoinMatch": "Attempting to Join Game...",
+    "waitingPlayers": "Waiting for players...",
+    "matchStarting": "Match Starting...",
+    "promptChangeCraft": "Press '{{spawnKey}}' in spawn to change character.",
+    "playerLeftMatch": "${name} has left the match.",
+    "ownFlagTaken": "Your Team's {{flag}} Was Taken!",
+    "enemyFlagTaken": "Opponent {{flag}} Taken!",
+    "ownFlagDropped": "Your Team's {{flag}} Was Dropped",
+    "enemyFlagDropped": "Opponent {{flag}} Dropped",
+    "ownFlagReturned": "Your Team's {{flag}} Was Returned",
+    "enemyFlagReturned": "Opponent {{flag}} Was Returned",
+    "trapTriggered": "Trap Triggered!"
+}

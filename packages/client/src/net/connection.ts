@@ -281,7 +281,7 @@ export class Connection {
         const host = import.meta.env.VITE_SERVER_HOST;
         const port = import.meta.env.VITE_SERVER_PORT;
 
-        if (import.meta.env.PROD) {
+        if (import.meta.env.HTTPS) {
 
             console.log(`using secure websockets`);
             return `wss://${host}:${port}`;

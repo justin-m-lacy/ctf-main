@@ -7,7 +7,7 @@
     "ctf:image": "docker build -t ctf-build -f dockerfile .",
     "build": "rimraf build && cross-env NODE_ENV=production ts-node esbuild.config.ts",
     "run": "cross-env  ts-node esbuild.config.ts",
-    "dev": "cross-env NODE_ENV=development ts-node esbuild.config.ts",
+    "dev": "cross-env NODE_ENV=development ts-node -r dotenv/config esbuild.config.ts",
     "types": "rimraf types && tsc --emitDeclarationOnly",
     "deploy": "npm i --production && start",
     "start": "node ."

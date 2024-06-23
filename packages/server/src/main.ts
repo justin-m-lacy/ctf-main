@@ -13,8 +13,6 @@ import * as fs from 'fs';
 console.log(`CWD: ${process.cwd()}`);
 console.log(`MODE: ${process.env.NODE_ENV}`);
 
-const isSecure = process.env.NODE_ENV === 'production';
-
 const port = process.env.SERVER_PORT ? parseInt(process.env.SERVER_PORT) : 3000;
 
 /// Create express routing.
@@ -29,8 +27,7 @@ app.get('/test', (req, res) => {
 });
 
 
-
-const server = isSecure ? secureServer(app) : basicServer(app);
+const server = createServer(app);
 
 const gameServer = new Server({
 
@@ -42,7 +39,6 @@ const gameServer = new Server({
 gameServer.onShutdown(() => console.log(`Ctf Server shutting down.`));
 
 
-
 if (process.env.NODE_ENV === 'development') {
     gameServer.simulateLatency(200);
 }
@@ -51,15 +47,23 @@ gameServer.define(RoomName.Lobby, LobbyRoom);
 gameServer.define(RoomName.Ctf, CtfRoom);
 gameServer.listen(port);
 
-console.log(`server Listening: ${isSecure ? 'https' : 'http'} on Port: ${port}`);
+console.log(`server Listening on Port: ${port}`);
 
+function createServer(app: express.Express) {
 
-function secureServer(app: express.Express) {
+    const certPath = process.env['CERT_PATH'];
+    const keyPath = process.env['KEY_PATH'];
+    if (certPath && keyPath) {
+        return secureServer(app, certPath, keyPath)
+    } else {
+        return basicServer(app);
+    }
 
-    console.log(`creating https server`);
+}
 
-    const certPath = process.env['CERT_PATH'] ?? './secure/server.cert';
-    const keyPath = process.env['KEY_PATH'] ?? './secure/server.key';
+function secureServer(app: express.Express, certPath: string, keyPath: string) {
+
+    console.log(`creating HTTPS server`);
 
     const cert = fs.readFileSync(certPath);
     const key = fs.readFileSync(keyPath);

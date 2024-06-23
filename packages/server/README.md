@@ -55,6 +55,19 @@ After building server,
 
 run `npm run start` on command line.
 
+### Google Cloud
+
+[Deploying Container](https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app#create_a_repository)
+
+Set Terminal Environment Variable Project Id.
+In Termainal:
+
+`export PROJECT_ID=PROJECT_ID`
+
+Set google cloud active project Id
+
+`gcloud config set project $PROJECT_ID`
+
 
 ### Create docker images
 
@@ -64,6 +77,15 @@ Make sure docker-desktop is running.
 
 Save docker image:
 `docker save image-name -o path.tar`
+
+
+#### View Docker image contents:
+
+`docker run -it --name temp-container ctf-build sh`
+
+In the container terminal use `exit` to exit.
+
+Run `docker rm temp-container` to remove the container holding the docker image.
 
 ### Push images to Digital Ocean
 

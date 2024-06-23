@@ -2,7 +2,6 @@ import esbuild from 'esbuild';
 import copyfiles from 'copyfiles';
 import { ChildProcess, spawn } from 'child_process';
 import { promisify } from 'util';
-import { loadEnv } from './load-env';
 import * as path from 'path';
 
 
@@ -11,12 +10,9 @@ const promiseCopy = promisify<string[], any>(copyfiles);
 const MODE = process.env.NODE_ENV ?? 'development';
 const DEV_MODE = MODE !== 'production';
 
-loadEnv(MODE);
-
-
 let runner: ChildProcess | null = null;
 
-console.log(`build: ${MODE}`);
+console.log(`build: ${MODE} in: ${process.cwd()}`);
 
 build();
 
@@ -31,10 +27,7 @@ async function build() {
     await esbuild.build({
 
         tsconfig: 'tsconfig.json',
-        alias: {
-            'src': './src/'
-        },
-        entryPoints: ['src/main.ts'],
+        entryPoints: ['./src/main.ts'],
         outdir: buildDir,
         outbase: __dirname,
         minify: !DEV_MODE,

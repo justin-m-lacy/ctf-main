@@ -118,9 +118,6 @@ export default async function (config: ConfigEnv) {
 
       port: 3001,
       cors: true,
-      https: {
-
-      },
       hmr: {
         host: 'localhost',
       },

@@ -9,12 +9,10 @@ COPY ["package.json", "package-lock.json*", "./"]
 RUN npm i
 
 COPY tsconfig.json esbuild.config.ts load-env.ts .
-COPY ctf ./ctf
-COPY src ./src
 COPY assets ./assets
+COPY src ./src
 
 RUN npm run build
-
 
 FROM node:18.12.1
 WORKDIR /app

@@ -4,13 +4,13 @@ import { PlayerSchema } from '../../../model/schema/player-schema';
 
 import { Driver } from './driver';
 import { SchemaMover } from '../../../engine/components/schema-mover';
-import { FSM } from 'src/engine/components/fsm';
+import { FSM } from '@/engine/components/fsm';
 import { StateEvent } from '../../../engine/components/fsm';
-import { State, Transition } from 'src/engine/data/state';
-import { TPoint } from 'src/engine/data/geom';
+import { State, Transition } from '@/engine/data/state';
+import { TPoint } from '@/engine/data/geom';
 import { Respawner } from '../respawner';
 import { MatterPlayer } from '../hits/matter-player';
-import { MatchParams } from 'src/model/schema/data/match-params';
+import { MatchParams } from '@/model/schema/data/match-params';
 import { PlayerState, isAlive } from '../../../model/schema/types';
 
 export class Player extends Component {

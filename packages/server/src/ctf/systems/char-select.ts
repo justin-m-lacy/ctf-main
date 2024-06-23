@@ -1,8 +1,8 @@
 import Group from '../../engine/group';
 import { MessageType } from '../../messages/message-types';
-import { CtfRoom } from 'src/rooms/ctf-room';
-import { CtfMatch } from 'src/ctf/ctf-match';
-import { CtfSchema } from 'src/model/schema/ctf-schema';
+import { CtfRoom } from '@/rooms/ctf-room';
+import { CtfMatch } from '@/ctf/ctf-match';
+import { CtfSchema } from '@/model/schema/ctf-schema';
 import { ClientCraftSelect } from '../../messages/client-messages';
 import { TCraft } from '../data/craft-type';
 import { InternalEvent } from '../data/consts';

@@ -1,7 +1,7 @@
 import { Component } from '../../engine/component';
 import { PlayerState } from '../../model/schema/types';
 import { StateEvent } from '../../engine/components/fsm';
-import { State } from 'src/engine/data/state';
+import { State } from '@/engine/data/state';
 import { Player } from './player/player';
 import { CtfMatch } from '../ctf-match';
 

@@ -2,7 +2,7 @@ import { Component } from '../../engine/component';
 import { Flag } from '../components/flag';
 import { PlayerSchema } from '../../model/schema/player-schema';
 import { FlagSchema, FlagState } from '../../model/schema/flag-schema';
-import { CtfSchema, CtfState } from 'src/model/schema/ctf-schema';
+import { CtfSchema, CtfState } from '@/model/schema/ctf-schema';
 import type { CtfMatch } from '../ctf-match';
 import { InternalEvent } from '../data/consts';
 import { isAlive } from '../../model/schema/types';

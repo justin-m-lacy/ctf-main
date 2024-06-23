@@ -1,7 +1,7 @@
 import { AimAbility } from './aim-ability';
 import { PlayerSchema } from '../../../../model/schema/player-schema';
 import { MatterBody } from '../../hits/matter-body';
-import { BodySchema } from 'src/model/schema/body-schema';
+import { BodySchema } from '@/model/schema/body-schema';
 import { WallProperties, BodyShape, HitCategory } from '../../../../model/matter';
 import { Bodies, Pair } from 'matter-js';
 import Actor from '../../../../engine/actor';
@@ -13,7 +13,7 @@ import { MatterPlayer } from '../../hits/matter-player';
 import { DragActor } from '../../drag-object';
 import { Player } from '../player';
 import { StateEvent } from '../../../../engine/components/fsm';
-import { State } from 'src/engine/data/state';
+import { State } from '@/engine/data/state';
 
 
 export class FireHook extends AimAbility {

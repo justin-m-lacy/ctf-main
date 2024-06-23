@@ -1,7 +1,7 @@
-import { Encoder } from 'src/engine/data/encodable';
+import { Encoder } from '@/engine/data/encodable';
 import { IRegion } from './iregion';
 import { Encodable } from '../../engine/data/encodable';
-import { TPoint } from 'src/engine/data/geom';
+import { TPoint } from '@/engine/data/geom';
 
 
 export class ConvexRegion implements IRegion, Encoder<ConvexRegion>, Encodable {

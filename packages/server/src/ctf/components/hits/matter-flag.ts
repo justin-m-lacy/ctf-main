@@ -2,7 +2,7 @@ import { MatterData } from './matter-data';
 import { Bodies, IBodyDefinition, Pair } from 'matter-js';
 import { PlayerSchema } from '../../../model/schema/player-schema';
 import { InternalEvent } from '../../data/consts';
-import { FlagSchema, FlagState } from 'src/model/schema/flag-schema';
+import { FlagSchema, FlagState } from '@/model/schema/flag-schema';
 import { HitCategory } from '../../../model/matter';
 
 const FlagBody: IBodyDefinition = {

@@ -2,7 +2,7 @@ import { TriggerAbility } from './trigger-ability';
 import { AbilitySchema } from '../../../../model/schema/data/ability-schema';
 import Actor from '../../../../engine/actor';
 import { Bodies, Pair } from 'matter-js';
-import { BodySchema } from 'src/model/schema/body-schema';
+import { BodySchema } from '@/model/schema/body-schema';
 import { Player } from '../player';
 import { MatterData } from '../../hits/matter-data';
 import { MatterPlayer } from '../../hits/matter-player';

@@ -1,7 +1,7 @@
 import { Schema, type } from '@colyseus/schema';
 import { PointSchema } from './data/point-schema';
 import { SubclassOpts } from '../../utils/types';
-import { TPoint } from 'src/engine/data/geom';
+import { TPoint } from '@/engine/data/geom';
 import { ShotType, ShotEffect } from './types';
 import { Point } from '../../engine/data/geom';
 

@@ -1,7 +1,7 @@
 import { Query, Engine } from 'matter-js';
 import { Component } from '../../../engine/component';
 import { SchemaMover } from '../../../engine/components/schema-mover';
-import { Point } from 'src/engine/data/geom';
+import { Point } from '@/engine/data/geom';
 import { MatterSystem } from '../../systems/matter-system';
 import { Priorities } from '../../data/consts';
 import { HitCategory } from '../../../model/matter';

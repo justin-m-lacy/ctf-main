@@ -1,9 +1,9 @@
-import { PlayerSchema } from 'src/model/schema/player-schema';
+import { PlayerSchema } from '@/model/schema/player-schema';
 import { AimAbility } from './aim-ability';
 import Actor from '../../../../engine/actor';
 import { MatterBody } from '../../hits/matter-body';
 import { Bodies } from 'matter-js';
-import { BodySchema } from 'src/model/schema/body-schema';
+import { BodySchema } from '@/model/schema/body-schema';
 import { TimeDestroy } from '../../../../engine/components/timed-destroy';
 import { BodyShape, WallProperties } from '../../../../model/matter';
 import { BodyType, ShotType, ShotEffect } from '../../../../model/schema/types';

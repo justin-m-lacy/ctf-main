@@ -1,5 +1,5 @@
-import { PlayerSchema } from 'src/model/schema/player-schema';
-import { ShotEffect, ShotType } from 'src/model/schema/types';
+import { PlayerSchema } from '@/model/schema/player-schema';
+import { ShotEffect, ShotType } from '@/model/schema/types';
 import { AimAbility } from './aim-ability';
 
 /**

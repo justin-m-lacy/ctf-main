@@ -4,8 +4,8 @@ import { BlastSchema } from '../../../model/schema/blast-schema';
 import { PlayerSchema } from '../../../model/schema/player-schema';
 import { MatterData } from './matter-data';
 import { Player } from '../player/player';
-import { IRegion } from 'src/model/regions/iregion';
-import { TPoint } from 'src/engine/data/geom';
+import { IRegion } from '@/model/regions/iregion';
+import { TPoint } from '@/engine/data/geom';
 import { HitCategory } from '../../../model/matter';
 
 

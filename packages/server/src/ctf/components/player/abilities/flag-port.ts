@@ -3,8 +3,8 @@ import { Player } from '../player';
 import { TriggerAbility } from './trigger-ability';
 import { SchemaMover } from '../../../../engine/components/schema-mover';
 import { Driver } from '../driver';
-import { PlayerState } from 'src/model/schema/types';
-import { FlagState } from 'src/model/schema/flag-schema';
+import { PlayerState } from '@/model/schema/types';
+import { FlagState } from '@/model/schema/flag-schema';
 
 
 /**

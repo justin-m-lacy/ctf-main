@@ -1,6 +1,6 @@
 import { AbilityState } from '../../../../model/schema/data/ability-schema';
 import { Ability } from './ability';
-import { AbilitySchema } from 'src/model/schema/data/ability-schema';
+import { AbilitySchema } from '@/model/schema/data/ability-schema';
 import { TPoint } from '../../../../engine/data/geom';
 
 

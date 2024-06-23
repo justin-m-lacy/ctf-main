@@ -1,4 +1,4 @@
-import { PlayerSchema } from 'src/model/schema/player-schema';
+import { PlayerSchema } from '@/model/schema/player-schema';
 import { AimAbility } from './aim-ability';
 
 

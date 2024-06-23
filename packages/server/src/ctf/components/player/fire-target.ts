@@ -1,14 +1,13 @@
 import { Component } from '../../../engine/component';
 import { Point, TPoint, clampToPi } from '../../../engine/data/geom';
 import { Player } from './player';
-import { PlayerState } from 'src/model/schema/types';
+import { PlayerState } from '@/model/schema/types';
 import { MatchParams } from '../../../model/schema/data/match-params';
-import { CtfMatch } from 'src/ctf/ctf-match';
+import { CtfMatch } from '@/ctf/ctf-match';
 import { FSM, StateEvent } from '../../../engine/components/fsm';
-import { State } from 'src/engine/data/state';
+import { State } from '@/engine/data/state';
 import { Driver } from './driver';
 import { AimAbility } from './abilities/aim-ability';
-import { radToDeg } from 'src/utils/logging';
 
 
 /**

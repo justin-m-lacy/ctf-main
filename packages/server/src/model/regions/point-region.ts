@@ -1,4 +1,4 @@
-import { Point, TPoint } from "src/engine/data/geom";
+import { Point, TPoint } from '@/engine/data/geom';
 import { IRegion } from "./iregion";
 
 export class PointRegion implements IRegion {

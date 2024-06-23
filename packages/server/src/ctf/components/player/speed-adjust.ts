@@ -1,4 +1,4 @@
-import { CtfMatch } from 'src/ctf/ctf-match';
+import { CtfMatch } from '@/ctf/ctf-match';
 import { Component } from '../../../engine/component';
 import { SchemaMover } from '../../../engine/components/schema-mover';
 import { quickSplice } from '../../../engine/utils/array-utils';

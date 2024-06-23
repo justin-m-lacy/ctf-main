@@ -2,7 +2,7 @@ import { Body, Pair, Bodies } from 'matter-js';
 
 import { Priorities } from '../../data/consts';
 import { MatterData } from './matter-data';
-import { BodySchema } from 'src/model/schema/body-schema';
+import { BodySchema } from '@/model/schema/body-schema';
 import { BulletSchema } from '../../../model/schema/bullet-schema';
 import { BlastSchema } from '../../../model/schema/blast-schema';
 import { MatterPlayer } from './matter-player';

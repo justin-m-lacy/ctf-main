@@ -5,9 +5,9 @@ import { AbilitySchema } from '../../../../model/schema/data/ability-schema';
 import { BodyType, PlayerState } from '../../../../model/schema/types';
 import { TPoint } from '../../../../engine/data/geom';
 import { FlameConeHit } from '../../hits/flame-cone-hit';
-import { BlastSchema } from 'src/model/schema/blast-schema';
+import { BlastSchema } from '@/model/schema/blast-schema';
 import Actor from '../../../../engine/actor';
-import { BodyShape } from 'src/model/matter';
+import { BodyShape } from '@/model/matter';
 export class FlameCone extends TriggerAbility {
 
     /**

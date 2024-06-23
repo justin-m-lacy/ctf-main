@@ -28,7 +28,7 @@
     "composite": true,
     "experimentalDecorators": true,
     "paths": {
-      "src/*": [
+      "@/*": [
         "./src/*"
       ]
     }

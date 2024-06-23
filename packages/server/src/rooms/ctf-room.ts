@@ -11,7 +11,7 @@ import { makeCtfSchema, MapData, parseMapData } from '../ctf/data/parser';
 import { ClientChat } from '../messages/chat-events';
 import { abilities } from '../../assets/abilities.json';
 import { TAbilityDef } from '../ctf/data/ability';
-import { TCraft } from "src/ctf/data/craft-type";
+import { TCraft } from '@/ctf/data/craft-type';
 import { crafts } from '../../assets/crafts.json';
 
 /*const waitCrafts: Promise<{ crafts: TCraft[] }> = fs.promises.readFile(

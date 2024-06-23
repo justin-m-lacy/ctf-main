@@ -4,7 +4,7 @@ import { EngineEvent } from '../../engine/actor';
 import { PlayerSchema } from '../../model/schema/player-schema';
 import { BulletSchema } from '../../model/schema/bullet-schema';
 import { PointSchema } from '../../model/schema/data/point-schema';
-import { angleToPt } from 'src/engine/data/geom';
+import { angleToPt } from '@/engine/data/geom';
 import { clampToPi, Point } from '../../engine/data/geom';
 import { Builder } from '../builders/builder';
 import { CtfSchema } from '../../model/schema/ctf-schema';

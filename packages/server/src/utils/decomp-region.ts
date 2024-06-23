@@ -2,7 +2,7 @@ import { TPoint } from '../engine/data/geom';
 import { makeCCW, quickDecomp } from 'poly-decomp-es';
 import { ConvexRegion } from '../model/regions/convex-region';
 import { RegionGroup } from '../model/regions/region-group';
-import { IRegion } from 'src/model/regions/iregion';
+import { IRegion } from '@/model/regions/iregion';
 /**
  * Decompose points into a region group or convex polygon.
  * @param points 

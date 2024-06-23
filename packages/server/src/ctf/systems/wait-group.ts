@@ -1,5 +1,5 @@
 import System from '../../engine/system';
-import { CtfSchema, CtfState } from 'src/model/schema/ctf-schema';
+import { CtfSchema, CtfState } from '@/model/schema/ctf-schema';
 import { CtfMatch } from '../ctf-match';
 import { InternalEvent } from '../data/consts';
 import { NO_TIMER } from '../../model/schema/ctf-schema';

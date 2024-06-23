@@ -2,7 +2,7 @@ import { Pair, Bodies } from 'matter-js';
 
 import { SchemaMover } from '../../../engine/components/schema-mover';
 import { MatterData } from './matter-data';
-import { PlayerSchema } from 'src/model/schema/player-schema';
+import { PlayerSchema } from '@/model/schema/player-schema';
 import { HitCategory } from '../../../model/matter';
 import { ActorEvent } from '../../data/consts';
 

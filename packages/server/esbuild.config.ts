@@ -28,6 +28,9 @@ async function build() {
 
         tsconfig: 'tsconfig.json',
         entryPoints: ['./src/main.ts'],
+        alias: {
+            '@': './src/'
+        },
         outdir: buildDir,
         outbase: __dirname,
         minify: !DEV_MODE,

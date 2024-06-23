@@ -10,15 +10,8 @@ import { CtfRoom } from './rooms/ctf-room';
 import { RoomName } from "./rooms/room-names";
 import * as fs from 'fs';
 
-import * as dotenv from 'dotenv';
-import * as path from 'path';
-
 console.log(`CWD: ${process.cwd()}`);
 console.log(`MODE: ${process.env.NODE_ENV}`);
-
-dotenv.config({
-    path: process.env.ENV_FILE ? path.resolve(process.cwd(), process.env.ENV_FILE) : undefined
-});
 
 const isSecure = process.env.NODE_ENV === 'production';
 

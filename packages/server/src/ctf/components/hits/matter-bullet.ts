@@ -1,4 +1,4 @@
-import { BulletSchema } from 'src/model/schema/bullet-schema';
+import { BulletSchema } from '@/model/schema/bullet-schema';
 import { MatterData } from './matter-data';
 import { Bodies, Pair } from 'matter-js';
 import { PlayerSchema } from '../../../model/schema/player-schema';

@@ -1,4 +1,4 @@
-import { AbilityState } from 'src/model/schema/data/ability-schema';
+import { AbilityState } from '@/model/schema/data/ability-schema';
 import { Ability } from './ability';
 import { AbilitySchema } from '../../../../model/schema/data/ability-schema';
 

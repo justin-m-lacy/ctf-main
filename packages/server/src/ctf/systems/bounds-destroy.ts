@@ -1,5 +1,5 @@
-import System from 'src/engine/system';
-import { quickSplice } from 'src/engine/utils/array-utils';
+import System from '@/engine/system';
+import { quickSplice } from '@/engine/utils/array-utils';
 import Actor from '../../engine/actor';
 import { IRectangle } from '../../engine/data/geom';
 

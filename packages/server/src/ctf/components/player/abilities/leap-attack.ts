@@ -1,12 +1,12 @@
 import { AbilitySchema } from '../../../../model/schema/data/ability-schema';
 import { TPoint, Point } from '../../../../engine/data/geom';
 import { AimAbility } from './aim-ability';
-import { PlayerSchema } from 'src/model/schema/player-schema';
+import { PlayerSchema } from '@/model/schema/player-schema';
 import { Player } from '../player';
 import { PlayerState } from '../../../../model/schema/types';
 import { Tween } from 'tweedle.js';
 import { InternalEvent, ActorEvent } from '../../../data/consts';
-import { PointSchema } from 'src/model/schema/data/point-schema';
+import { PointSchema } from '@/model/schema/data/point-schema';
 
 export class LeapAttack extends AimAbility {
 

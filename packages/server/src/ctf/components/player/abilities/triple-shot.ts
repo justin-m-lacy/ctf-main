@@ -1,7 +1,7 @@
 import { AbilitySchema } from '../../../../model/schema/data/ability-schema';
 import { RadPerDeg } from '../../../../engine/data/geom';
 import { AimAbility } from './aim-ability';
-import { PlayerSchema } from 'src/model/schema/player-schema';
+import { PlayerSchema } from '@/model/schema/player-schema';
 
 
 /**

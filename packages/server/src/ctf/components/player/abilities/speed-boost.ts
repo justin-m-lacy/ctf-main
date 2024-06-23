@@ -1,5 +1,5 @@
 import { SchemaMover } from '../../../../engine/components/schema-mover';
-import { AbilitySchema } from 'src/model/schema/data/ability-schema';
+import { AbilitySchema } from '@/model/schema/data/ability-schema';
 import { TriggerAbility } from './trigger-ability';
 export class SpeedBoost extends TriggerAbility {
 

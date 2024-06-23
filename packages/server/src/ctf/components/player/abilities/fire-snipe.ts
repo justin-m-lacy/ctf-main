@@ -1,4 +1,4 @@
-import { PlayerSchema } from 'src/model/schema/player-schema';
+import { PlayerSchema } from '@/model/schema/player-schema';
 import { Player } from '../player';
 import { PlayerState, ShotEffect, ShotType } from '../../../../model/schema/types';
 import { TPoint } from '../../../../engine/data/geom';

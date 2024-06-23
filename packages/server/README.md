@@ -69,7 +69,7 @@ Set google cloud active project Id
 `gcloud config set project $PROJECT_ID`
 
 
-### Create docker images
+### Create docker image
 
 Make sure docker-desktop is running.
 
@@ -79,7 +79,17 @@ Save docker image:
 `docker save image-name -o path.tar`
 
 
-#### View Docker image contents:
+#### Push Image to Google Cloud
+
+Tag image with full target repository path. e.g:
+
+`us-west1-docker.pkg.dev/${PROJECT_ID}/ctf-build/ctf-build:v1`
+
+Push:
+
+`docker push us-west1-docker.pkg.dev/${PROJECT_ID}/ctf-build/ctf-build:v1`
+
+#### View Docker Image Contents
 
 `docker run -it --name temp-container ctf-build sh`
 

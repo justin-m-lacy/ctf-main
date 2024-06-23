@@ -3,7 +3,7 @@ import { AbilitySchema } from '../../../../model/schema/data/ability-schema';
 import { Bodies } from 'matter-js';
 import { TPoint } from '../../../../engine/data/geom';
 import Actor from '../../../../engine/actor';
-import { BodySchema } from 'src/model/schema/body-schema';
+import { BodySchema } from '@/model/schema/body-schema';
 import { PlayerSchema } from '../../../../model/schema/player-schema';
 import { Player } from '../player';
 import { MatterBody } from '../../hits/matter-body';

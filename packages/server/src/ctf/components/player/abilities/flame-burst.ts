@@ -4,9 +4,9 @@ import { Player } from '../player';
 import { AbilitySchema } from '../../../../model/schema/data/ability-schema';
 import { BodyType } from '../../../../model/schema/types';
 import { TPoint } from '../../../../engine/data/geom';
-import { BlastSchema } from 'src/model/schema/blast-schema';
+import { BlastSchema } from '@/model/schema/blast-schema';
 import Actor from '../../../../engine/actor';
-import { BodyShape } from 'src/model/matter';
+import { BodyShape } from '@/model/matter';
 import { MatterBurst } from '../../hits/matter-burst';
 
 /**

@@ -1,5 +1,5 @@
 import { Engine, World, Body, Composite, Events, IEventCollision, Query } from 'matter-js';
-import System from "src/engine/system";
+import System from '@/engine/system';
 import { MatterData } from "../components/hits/matter-data";
 import { TPoint } from '../../engine/data/geom';
 import { HitCategory } from '../../model/matter';

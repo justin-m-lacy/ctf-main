@@ -4,7 +4,7 @@
   "main": "src/main.js",
   "scripts": {
     "clear": "rimraf build",
-    "ctf:image": "docker build -t ctf-build -f dockerfile .",
+    "build:image": "docker build -t ctf-build -f dockerfile .",
     "build": "rimraf build && cross-env NODE_ENV=production ts-node esbuild.config.ts",
     "run": "cross-env  ts-node esbuild.config.ts",
     "dev": "cross-env NODE_ENV=development ts-node -r dotenv/config esbuild.config.ts",

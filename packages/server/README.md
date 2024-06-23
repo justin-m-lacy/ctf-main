@@ -73,7 +73,7 @@ Set google cloud active project Id
 
 Make sure docker-desktop is running.
 
-`npm run ctf-image` builds a docker image.
+`npm run build:image` builds a docker image.
 
 Save docker image:
 `docker save image-name -o path.tar`
@@ -83,19 +83,33 @@ Save docker image:
 
 Tag image with full target repository path. e.g:
 
-`us-west1-docker.pkg.dev/${PROJECT_ID}/ctf-build/ctf-build:v1`
+`docker tag ctf-build us-west1-docker.pkg.dev/${PROJECT_ID}/ctf-build/ctf-build:v1`
 
 Push:
 
 `docker push us-west1-docker.pkg.dev/${PROJECT_ID}/ctf-build/ctf-build:v1`
 
-#### View Docker Image Contents
+#### View Image Contents
 
 `docker run -it --name temp-container ctf-build sh`
 
 In the container terminal use `exit` to exit.
 
 Run `docker rm temp-container` to remove the container holding the docker image.
+
+#### Run Image locally:
+
+
+`docker run --rm -p 3000:3000 ctf-build`
+
+rm - remove container after closing.
+
+p - map host port to container port
+
+`-p 192.168.1.1:8080:3000/udp`
+map host Ip and port to docker container
+
+
 
 ### Push images to Digital Ocean
 

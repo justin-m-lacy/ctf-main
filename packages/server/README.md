@@ -95,7 +95,7 @@ Push:
 
 In the container terminal use `exit` to exit.
 
---rm automatically removes the container on exit. If omitted,
+--rm automaticallfasdfdasy removes the container on exit. If omitted,
 
 run `docker rm temp-container` to remove the container hosting the docker image.
 

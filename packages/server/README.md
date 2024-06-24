@@ -91,11 +91,13 @@ Push:
 
 #### View Image Contents
 
-`docker run -it --name temp-container ctf-build sh`
+`docker run --rm -it --name temp-container ctf-build sh`
 
 In the container terminal use `exit` to exit.
 
-Run `docker rm temp-container` to remove the container holding the docker image.
+--rm automatically removes the container on exit. If omitted,
+
+run `docker rm temp-container` to remove the container hosting the docker image.
 
 #### Run Image locally:
 

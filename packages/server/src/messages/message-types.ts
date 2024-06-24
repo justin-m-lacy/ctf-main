@@ -3,7 +3,6 @@ import { ClientDest, ClientCancelFire, ClientChargeFire, ClientUsePrimary, Clien
 import { ClientChat, MatchChat } from './chat-events';
 import { TPoint } from '../engine/data/geom';
 import { MapData } from '../ctf/data/parser';
-import { CtfSchema } from '../model/schema/ctf-schema';
 
 export enum MessageType {
 
